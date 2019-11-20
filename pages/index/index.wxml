@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover" />
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+    <rich-text nodes="{{nodes}}" bindtap="tap"></rich-text>
+    <video id="myVideo" src="https://ksv-video-publish.cdn.bcebos.com/9960eca795be3e3c0f3f11208bf9a62d9a126a21.mp4?auth_key=1619683497-0-0-37ebbf1e49c5d2b21d2ad43eed004c34" controls object-fit='cover'></video>
+    <video src='https://dianbo.yesky.com/buzhiyu/shanliangdxwd.mp4' controls="{{false}}" object-fit='cover'></video>
+  </view>
+  <text>page {{a}}</text>
+  <text>page {{b}}</text>
+  <button bindtap='setB'>b +1</button>
+  <test-comp bind:fn="fn" a= "{{a}}" b='{{b}}' />
+  <view wx:key="index" wx:for="{{movieList}}" wx:for-item="item">
+    <text>{{item.title}}</text>
+    <image src="{{item.image2}}"></image>
+  </view>
+  <button bindtap="goDetail">go defail</button>
+</view>

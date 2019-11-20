@@ -1,0 +1,5 @@
+<!-- components/testCom/testCom.wxml -->
+<button bindtap='fn1'>a  +1 </button>
+<text>testCom a {{a}}</text>
+<view >testCom b {{b}}</view>
+<view >sum: {{sum}}</view>

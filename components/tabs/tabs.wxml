@@ -1,0 +1,5 @@
+<!--components/tabs/tabs.wxml-->
+
+<view class="tabs-container">
+  <view class="tabs-item {{activeIdx === index ? 'tabActive': ''}}" wx:for="{{tabs}}" wx:key="{{index}}" bindtap="toggle" data-index="{{index}}">{{item}}</view>
+</view>

@@ -1,0 +1,19 @@
+/* components/tabs/tabs.wxss */
+
+.tabs-container{
+  display: flex;
+  height: 80rpx;
+  align-items: center;
+
+}
+
+.tabs-item{
+  flex: 1;
+  text-align: center;
+  line-height: 80rpx;
+}
+
+.tabActive.tabs-item{
+  background: green;
+  color: #fff;
+}
