@@ -1,0 +1,46 @@
+/* components/menu/menu.wxss */
+.menu-container{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, .4);
+  height: 100%;
+  width: 100%;
+  padding-top: 64px;
+}
+
+.menu-wrap{
+  width: 426rpx;
+  height: 100%;
+  background: #0C5897;
+  padding: 40rpx;
+  position: relative;
+  padding-top: 140rpx;
+}
+
+.menu-item{
+  font-size: 28rpx;
+  color: #ffffff;
+  padding: 20rpx 0;
+}
+.menu-item.last{
+  margin-bottom: 20rpx;
+  padding-bottom: 40rpx;
+  border-bottom: 2rpx solid #1A67A6;
+}
+
+.close-container{
+  position: absolute;
+  top: 84px;
+  left: 466rpx;
+  z-index: 2;
+  width: 28rpx;
+  height: 28rpx;
+}
+
+.close-img{
+  width: 28rpx;
+  height: 28rpx;
+}

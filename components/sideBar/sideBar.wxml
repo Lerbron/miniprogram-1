@@ -1,0 +1,18 @@
+<!--components/menu/menu.wxml-->
+<view class="menu-container">
+  <view class="close-container" bindtap="close">
+    <image class="close-img" src='/imgs/close.png'></image>
+  </view>
+  <view class="menu-wrap"> 
+    <view
+      wx:for="{{menus}}"
+      wx:key="item.key"
+      class="menu-item {{item.isLast ? 'last': ''}}"
+      bindtap="jump"
+      data-menu-item="{{item}}"
+      data-page-id="{{pageId}}"
+    >
+      {{item.name}}
+    </view>
+  </view>
+</view>

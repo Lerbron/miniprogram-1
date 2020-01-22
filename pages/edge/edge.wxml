@@ -1,0 +1,10 @@
+<!--pages/edge/edge.wxml-->
+<view class="container">
+  <navigationBar 
+    id="gainPhone"
+    text="前沿深度" 
+    back="{{true}}"
+    bindshowmenu='showMenu'
+  >
+  </navigationBar>
+</view>

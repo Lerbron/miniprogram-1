@@ -2,5 +2,5 @@
   "usingComponents": {
     "test-comp": "/components/testCom/testCom"
   },
-  "enablePullDownRefresh": true
+  "enablePullDownRefresh": false
 }

@@ -1,0 +1,10 @@
+<!--pages/column/column.wxml-->
+<view class="container">
+  <navigationBar 
+    id="gainPhone"
+    text="TFG专栏" 
+    back="{{true}}"
+    bindshowmenu='showMenu'
+  >
+  </navigationBar>
+</view>

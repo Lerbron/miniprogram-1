@@ -1,6 +1,0 @@
-<!--logs.wxml-->
-
-<view>
-  <tabs tabs="{{tabs}}" bindcallback='callback' />
-  <button bindtap="goHome">goHome</button>
-</view>

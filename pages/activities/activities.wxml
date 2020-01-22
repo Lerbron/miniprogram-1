@@ -1,0 +1,13 @@
+<!--pages/activities/activities.wxml-->
+<view class="container">
+  <navigationBar 
+    id="gainPhone"
+    text="参加活动" 
+    back="{{false}}"
+    bindshowmenu='showMenu'
+  >
+  </navigationBar>
+</view>
+<view wx:if="{{show}}">
+  <menu bindhidemenu='hideMenu' pageId='activity'></menu>
+</view>

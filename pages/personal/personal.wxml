@@ -1,0 +1,10 @@
+<!--pages/personal/personal.wxml-->
+<view class="container">
+  <navigationBar 
+    id="gainPhone"
+    text="个人设置" 
+    back="{{true}}"
+    bindshowmenu='showMenu'
+  >
+  </navigationBar>
+</view>

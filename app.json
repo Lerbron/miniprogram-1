@@ -1,24 +1,41 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs",
-    "pages/detail/detail"
+    "pages/activities/activities",
+    "pages/mine/mine",
+    "pages/detail/detail",
+    "pages/edge/edge",
+    "pages/science/science",
+    "pages/personal/personal",
+    "pages/column/column",
+    "pages/interview/interview"
   ],
+  "usingComponents": {
+    "navigationBar": "/components/navigationBar/navigationBar",
+    "menu": "/components/sideBar/sideBar"
+  },
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "miniProgram",
-    "navigationBarTextStyle": "black"
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
   },
   "tabBar": {
+    "color": "#999",
+    "selectedColor": "#0C5897",
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "首页"
+        "text": "发现内容"
       },
       {
-        "pagePath": "pages/logs/logs",
-        "text": "日志"
+        "pagePath": "pages/activities/activities",
+        "text": "参加活动"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的"
       }
     ]
   },

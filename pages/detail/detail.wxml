@@ -1,2 +1,11 @@
 <!--pages/detail/detail.wxml-->
-<text>pages/detail/detail.wxml</text>
+<view class="container">
+  <navigationBar 
+    id="gainPhone"
+    text="The First Generation" 
+    back="{{true}}"
+  >
+ 
+  </navigationBar>
+  <view>detail pages</view>
+</view>

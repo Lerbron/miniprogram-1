@@ -1,0 +1,10 @@
+<!--pages/science/science.wxml-->
+<view class="container">
+  <navigationBar 
+    id="gainPhone"
+    text="科技哲思" 
+    back="{{true}}"
+    bindshowmenu='showMenu'
+  >
+  </navigationBar>
+</view>

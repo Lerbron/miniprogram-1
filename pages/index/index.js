@@ -1,27 +1,15 @@
 //index.js
+
 //获取应用实例
 const app = getApp()
 const { get }= require('./../../utils/http')
 
-
 Page({
   data: {
-    motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false,
-    movieList: [],
-    page: 1,
-    a: 1,
-    b: 2,
-    canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    nodes: `<div>我是html <img src='https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg' /> <i>我是i</i></div>`.replace(/<img/, '<img style="max-width:90%; margin:0 5%; "')
+    show: false,
+    banners: [1, 2, 3]
   },
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
-  },
+ 
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({
@@ -57,24 +45,25 @@ Page({
 
   goDetail() {
     wx.navigateTo({
-      url: './../detail/detail',
+      url: './../detail/detail?id=1',
     })
   },
 
-  fn(data) {
-    // console.log('fn:', data)
-    this.setData({a: this.data.a + 1})
+  showMenu() {
+    this.setData({
+      show: true
+    })
+    wx.hideTabBar({})
   },
 
-  setB() {
-    this.setData({b: this.data.b + 1})
+  hideMenu() {
+    this.setData({
+      show: false
+    })
+    wx.showTabBar({})
   },
 
-  onTabItemTap(item) {
-    console.log('onTabItemTap', item.index)
-    console.log('onTabItemTap', item.pagePath)
-    console.log('onTabItemTap', item.text)
-  },
+ 
 
   getData() {
 
@@ -110,16 +99,16 @@ Page({
       hasUserInfo: true
     })
   },
-  onPullDownRefresh(){
-    console.log('onPullDownRefresh()')
-    // wx.startPullDownRefresh()
-    wx.showNavigationBarLoading();
-    setTimeout(() => {
-      wx.hideNavigationBarLoading();
-      wx.stopPullDownRefresh();
+  // onPullDownRefresh(){
+  //   console.log('onPullDownRefresh()')
+  //   // wx.startPullDownRefresh()
+  //   wx.showNavigationBarLoading();
+  //   setTimeout(() => {
+  //     wx.hideNavigationBarLoading();
+  //     wx.stopPullDownRefresh();
 
-    }, 3000)
-  },
+  //   }, 3000)
+  // },
   onReachBottom: function () {
     var that = this;
         

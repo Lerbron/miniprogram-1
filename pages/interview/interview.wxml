@@ -1,0 +1,10 @@
+<!--pages/interview/interview.wxml-->
+<view class="container">
+  <navigationBar 
+    id="gainPhone"
+    text="TFG专访" 
+    back="{{true}}"
+    bindshowmenu='showMenu'
+  >
+  </navigationBar>
+</view>

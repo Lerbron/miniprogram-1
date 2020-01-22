@@ -1,0 +1,13 @@
+<!--pages/mine/mine.wxml-->
+<view class="container">
+  <navigationBar 
+    id="gainPhone"
+    text="我的" 
+    back="{{false}}"
+    bindshowmenu='showMenu'
+  >
+  </navigationBar>
+</view>
+<view wx:if="{{show}}">
+  <menu bindhidemenu='hideMenu' pageId='mine'></menu>
+</view>
